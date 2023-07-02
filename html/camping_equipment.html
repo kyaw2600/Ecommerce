@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="ctn">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html" target="_self">
+                        <object data="../images/gif.webp"></object></a>
+                </div>
+                <nav>
+                    <ul id="mnuitems">
+                        <li><a href="../html/index.html" target="_self">Home</a></li>
+                        <li><a href="../html/camping_equipment.html" target="_self" class="rrrr">Camping Equipments</a></li>
+                        <li><a href="../html/furniture.html" target="_self">Furniture</a></li>
+                        <li><a href="../html/Review.html" target="_self">Review</a></li>
+                        <li><a href="../html/acount.html" target="_self">Account</a></li>
+                        <li><a href="../html/offers_and_packages.html" target="_self">Offers and Packages</a></li>
+                    </ul>
+                </nav>
+                <a href="basket.html" target="_self"><img src="../images/basket.webp" id="uuuu"
+                        alt=""></a>
+                <img src="../images/menu-icon.png" class="menu-icon" onclick="menutoggle()" alt="">
+
+
+                <div class="search-box">
+                    <input type="text" placeholder="Type to search..">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cancel-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="search-data">
+                    </div>
+                </div>
+                <script>
+                    const searchBox = document.querySelector(".search-box");
+                    const searchBtn = document.querySelector(".search-icon");
+                    const cancelBtn = document.querySelector(".cancel-icon");
+                    const searchInput = document.querySelector("input");
+                    const searchData = document.querySelector(".search-data");
+                    searchBtn.onclick = () => {
+                        searchBox.classList.add("active");
+                        searchBtn.classList.add("active");
+                        searchInput.classList.add("active");
+                        cancelBtn.classList.add("active");
+                        searchInput.focus();
+                        if (searchInput.value != "") {
+                            var values = searchInput.value;
+                            searchData.classList.remove("active");
+                            searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
+                        } else {
+                            searchData.textContent = "";
+                        }
+                    }
+                    cancelBtn.onclick = () => {
+                        searchBox.classList.remove("active");
+                        searchBtn.classList.remove("active");
+                        searchInput.classList.remove("active");
+                        cancelBtn.classList.remove("active");
+                        searchData.classList.toggle("active");
+                        searchInput.value = "";
+                    }
+                </script>
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <div class="small-ctn">
+
+
+            <div class="rw rw-2">
+                <h2 class="tit">Products</h2>
+
+            </div>
+
+
+
+
+            <div class="rw">
+                <div class="cl4">
+                    <img src="../images/tent1.jpg" alt="">
+                    <h4>Tent</h4>
+                    <p>$60.00</p>
+                </div>
+                <div class="cl4">
+                    <img src="../images/pro3.jfif" alt="">
+                    <h4>Camping Pillow</h4>
+                    <p>$199.00</p>
+                </div>
+                <div class="cl4">
+                    <img src="../images/AOI.jpg" alt="">
+                    <h4>All in one tool</h4>
+                    <p>$40.00</p>
+                </div>
+                <div class="cl4">
+                    <img src="../images/tent2.jpg" alt="">
+                    <h4>Orange Tent</h4>
+                    <p>$55.00</p>
+                </div>
+            </div>
+
+            <div class="rw">
+                <div class="cl4">
+                    <img src="../images/waterprove.jpg" alt="">
+                    <h4>Water Proof Bag</h4>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="cl4">
+                    <img src="../images/pro1.jpg" alt="">
+                    <h4>Sleeping pad</h4>
+                    <p>$30.00</p>
+                </div>
+                <div class="cl4">
+                    <img src="../images/Cshoe.jfif" alt="">
+                    <h4>Camping Shoe</h4>
+                    <p>$45.00</p>
+                </div>
+                <div class="cl4">
+                    <img src="../images/cook.jpg" alt="">
+                    <h4>Pan</h4>
+                    <p>$40.00</p>
+                </div>
+
+            </div>
+
+            <div class="rw">
+                <div class="cl4">
+                    <img src="../images/watch.webp" alt="">
+                    <h4>Watch</h4>
+                    <p>$200.00</p>
+                </div>
+
+                <div class="cl4">
+                    <img src="../images/campingbag.jpg" alt="">
+                    <h4>Camping Bag</h4>
+                    <p>$70.00</p>
+                </div>
+                <div class="cl4">
+                    <img src="../images/MapPhone.jpg" alt="">
+                    <h4>Map Phone</h4>
+                    <p>$150.00</p>
+                </div>
+                <div class="cl4">
+                    <img src="../images/lighter.jpg" alt="">
+                    <h4>Lighter</h4>
+                    <p>$10.00</p>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+    <footer>
+        <div class="ctn">
+            <div class="rw">
+
+                <div class="footer-cl2">
+                    <img src="../images/banner-forest-tent-camping.webp" alt="">
+                    <p>Our goal is to make sports enjoyable and beneficial to as many people as possible in a
+                        sustainable manner.</p>
+                </div>
+                <div class="footer-cl3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-cl1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone </p>
+                    <div class="app-logo">
+                        <img src="../images/google-play1.jpg" alt="">
+                        <img src="../images/204-2047577_app-store-badge-png-app-store-transparent-png.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-cl4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bra">
+            <div class="small-ctn">
+                <div class="rw">
+                    <div class="cl5">
+                        <a href="https://www.paypal.com/mm/home"> <img src="../images/logo3.png" alt=""></a>
+                    </div>
+                    <div class="cl5">
+                        <a href="https://www.facebook.com/"> <img src="../images/Facebook_Logo_(2019).svg.png" alt=""></a>
+                    </div>
+                    <div class="cl5">
+                        <a href="https://www.instagram.com/"><img src="../images/Instagram_logo.svg.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+  
+    <script>
+        var mnuitems = document.getElementById("mnuitems");
+        mnuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (mnuitems.style.maxHeight == "0px") {
+                mnuitems.style.maxHeight = "200px"
+            }
+            else {
+                mnuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
